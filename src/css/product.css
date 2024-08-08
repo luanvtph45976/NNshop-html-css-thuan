@@ -97,31 +97,34 @@ body {
   background-color: yellow;
   color: black;
 }
+
 .h1 {
   margin-left: 57px;
   margin-top: 50px;
 }
+
 .flexfiler {
   display: flex;
-  justify-content: space-between; /* Căn chỉnh hình ảnh ở hai bên trái và phải */
-  align-items: center; /* Căn giữa hình ảnh theo chiều dọc */
-  padding: 10px; /* Thêm khoảng cách nếu cần */
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
 }
 
 .flexfiler img {
   margin: 0;
 }
+
 .product-list {
   margin-top: 20px;
   display: flex;
-  flex-wrap: wrap; /* Cho phép các sản phẩm xuống dòng khi không đủ không gian */
-  gap: 29px; /* Khoảng cách giữa các cột và hàng */
+  flex-wrap: wrap;
+  gap: 29px;
 }
 
 .product {
   display: flex;
   flex-direction: column;
-  width: calc(33.333% - 20px); /* 3 cột với khoảng cách giữa chúng */
+  width: calc(33.333% - 20px);
   box-sizing: border-box;
 }
 
@@ -136,9 +139,11 @@ body {
   align-items: center;
   margin: 10px 0;
 }
+
 .title img {
   width: 20px;
 }
+
 .title .brand {
   font-weight: bold;
 }
@@ -146,12 +151,12 @@ body {
 .star {
   display: flex;
   align-items: center;
-  gap: 10px; /* Khoảng cách giữa các biểu tượng và thông tin */
+  gap: 10px;
   margin-top: 10px;
 }
 
 .star img {
-  height: 20px; /* Điều chỉnh kích thước biểu tượng sao nếu cần */
+  height: 20px;
   width: 20px;
 }
 
@@ -162,122 +167,129 @@ body {
 .star h4 {
   margin-left: 240px;
 }
+
 .button {
   margin-top: 30px;
   margin-bottom: 150px;
   display: flex;
-  justify-content: center; /* Căn giữa nút theo chiều ngang */
-  align-items: center; /* Căn giữa nút theo chiều dọc */
-  /* Đảm bảo div chiếm toàn bộ chiều cao của viewport, tùy chỉnh theo nhu cầu */
+  justify-content: center;
+  align-items: center;
 }
 
 .button button {
-  background-color: #018294; /* Màu nền của nút */
-  color: white; /* Màu chữ của nút */
-  border: none; /* Loại bỏ viền mặc định của nút */
-  padding: 10px 20px; /* Khoảng cách bên trong nút */
-  font-size: 16px; /* Kích thước chữ */
-  cursor: pointer; /* Con trỏ thay đổi khi di chuột qua nút */
+  background-color: #018294;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
   height: 40px;
-  transition: background-color 0.3s; /* Hiệu ứng chuyển màu nền khi di chuột */
+  transition: background-color 0.3s;
 }
 
 .button button:hover {
-  background-color: #016c77; /* Màu nền khi di chuột qua nút */
+  background-color: #016c77;
 }
+
 .support {
   margin-left: 65px;
   display: flex;
-  justify-content: space-between; /* Phân phối không gian đều giữa các hình ảnh */
-  flex-wrap: nowrap; /* Đảm bảo các hình ảnh nằm trên cùng một hàng */
-  align-items: center; /* Căn giữa hình ảnh theo chiều dọc */
-  gap: 10px; /* Khoảng cách giữa các hình ảnh */
-  padding: 10px; /* Khoảng cách nội bộ của div nếu cần */
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
 }
 
 .support img {
-  max-width: 100px; /* Điều chỉnh kích thước tối đa của hình ảnh nếu cần */
-  height: auto; /* Đảm bảo tỷ lệ khung hình được giữ */
+  max-width: 100px;
+  height: auto;
 }
+
 .title2 h1 {
   justify-content: center;
   align-items: center;
 }
+
 .content {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Căn giữa các phần tử theo chiều ngang */
-  text-align: center; /* Căn giữa văn bản trong các phần tử */
-  padding: 20px; /* Thêm khoảng cách xung quanh nếu cần */
+  align-items: center;
+  text-align: center;
+  padding: 20px;
 }
 
 .content h1 {
   margin-bottom: 20px;
-  margin: 0 0 10px 0; /* Loại bỏ khoảng cách mặc định và thêm khoảng cách dưới tiêu đề nếu cần */
-  font-size: 24px; /* Kích thước chữ tiêu đề, điều chỉnh theo nhu cầu */
+  margin: 0 0 10px 0;
+  font-size: 24px;
 }
 
 .content p {
   color: #676562;
   margin-top: 20px;
-  margin: 0; /* Loại bỏ khoảng cách mặc định */
-  font-size: 16px; /* Kích thước chữ cho đoạn văn bản, điều chỉnh theo nhu cầu */
+  margin: 0;
+  font-size: 16px;
 }
+
 .footer {
   margin-bottom: 40px;
   margin-top: 40px;
   background-color: #018294;
   border-radius: 20px;
   display: flex;
-  justify-content: space-between; /* Khoảng cách đều giữa các cột */
-  align-items: center; /* Căn giữa các phần tử theo chiều dọc */
-  padding: 20px; /* Khoảng cách đều trên dưới trái phải */
-  gap: 20px; /* Khoảng cách giữa các cột */
-  box-sizing: border-box; /* Đảm bảo padding không làm tăng kích thước của .footer */
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+  box-sizing: border-box;
 }
 
 .footer .content {
-  flex: 1; /* Cột đầu tiên chiếm một phần của không gian */
+  flex: 1;
 }
 
 .footer .sortler {
   margin-top: 40px;
-  flex: 1; /* Cột thứ hai chiếm một phần của không gian */
+  flex: 1;
   display: flex;
-  justify-content: center; /* Căn giữa hình ảnh theo chiều ngang */
-  align-items: center; /* Căn giữa hình ảnh theo chiều dọc */
+  justify-content: center;
+  align-items: center;
 }
 
 .footer .flex-icon {
   display: flex;
-  align-items: center; /* Căn giữa các phần tử theo chiều dọc */
-  gap: 10px; /* Khoảng cách giữa biểu tượng và đoạn văn */
-  margin-top: 10px; /* Khoảng cách trên cùng của từng mục */
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
 }
+
 .rounded-button {
   border-radius: 10%;
   background-color: #f7d047;
 }
+
 .footer .rounded-button {
-  border-radius: 50px; /* Bo góc của nút */
-  background-color: 30%; /* Màu nền của nút */
-  color: white; /* Màu chữ của nút */
-  border: none; /* Loại bỏ viền mặc định của nút */
-  padding: 10px 20px; /* Khoảng cách bên trong nút */
-  font-size: 16px; /* Kích thước chữ */
-  cursor: pointer; /* Con trỏ thay đổi khi di chuột qua nút */
-  border-radius: 5px; /* Bo góc của nút */
-  margin: 10px 0; /* Khoảng cách trên và dưới của nút */
+  border-radius: 50px;
+  background-color: 30%;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 10px 0;
 }
 
 .footer h3 {
-  margin-bottom: 20px; /* Khoảng cách dưới của tiêu đề */
+  margin-bottom: 20px;
 }
 
 .footer img {
-  max-width: 100%; /* Đảm bảo hình ảnh không vượt quá kích thước cột */
-  height: auto; /* Đảm bảo tỷ lệ khung hình được giữ */
+  max-width: 100%;
+  height: auto;
 }
+
 .footer-content {
   margin-left: 120px;
 }
